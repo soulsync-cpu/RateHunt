@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 220 25% 8%;
+    --foreground: 220 15% 95%;
+
+    --card: 220 20% 12%;
+    --card-foreground: 220 15% 95%;
+
+    --popover: 220 20% 12%;
+    --popover-foreground: 220 15% 95%;
+
+    --primary: 190 90% 50%;
+    --primary-foreground: 220 25% 8%;
+
+    --secondary: 220 18% 18%;
+    --secondary-foreground: 220 15% 95%;
+
+    --muted: 220 18% 18%;
+    --muted-foreground: 220 15% 60%;
+
+    --accent: 195 80% 55%;
+    --accent-foreground: 220 25% 8%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 220 15% 95%;
+
+    --success: 142 70% 45%;
+    --success-foreground: 220 25% 8%;
+
+    --border: 220 20% 20%;
+    --input: 220 20% 20%;
+    --ring: 190 90% 50%;
+
+    --radius: 0.75rem;
+
+    --gradient-primary: linear-gradient(135deg, hsl(190, 90%, 50%), hsl(195, 80%, 55%));
+    --gradient-success: linear-gradient(135deg, hsl(142, 70%, 45%), hsl(142, 70%, 55%));
+    --glow-primary: 0 0 20px hsl(190 90% 50% / 0.4);
+    --glow-success: 0 0 20px hsl(142 70% 45% / 0.4);
+
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  /* Tabular numbers for prices */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}

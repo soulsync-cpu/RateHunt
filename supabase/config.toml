@@ -1,0 +1,4 @@
+project_id = "dnxgsglycduvuelqajlz"
+
+[functions.fetch-p2p-rates]
+verify_jwt = false
